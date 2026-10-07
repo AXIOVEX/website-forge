@@ -16,6 +16,7 @@ Smoke test (no MCP client needed):
   python server.py --selftest https://example.com/
 """
 import json, re, sys, urllib.request, urllib.error
+from datetime import date
 from html.parser import HTMLParser
 
 try:
@@ -44,7 +45,7 @@ class _Facts(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.title=""; self._in_title=False; self.meta={}; self.canonical=None
-        self.jsonld=0; self.jsonld_ok=0; self._in_ld=False; self._ld=""
+        self.jsonld=0; self.jsonld_ok=0; self.jsonld_entities=0; self._in_ld=False; self._ld=""
         self.h1=0; self.h2=0; self.h3=0; self.img=0; self.time=0; self.links=0
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
@@ -65,7 +66,17 @@ class _Facts(HTMLParser):
         if tag=="title": self._in_title=False
         if tag=="script" and self._in_ld:
             self._in_ld=False
-            try: json.loads(self._ld); self.jsonld_ok+=1
+            try:
+                parsed=json.loads(self._ld); self.jsonld_ok+=1
+                # Count entities, not just <script> blocks: one block may carry a
+                # whole @graph (Organization + WebSite + WebPage), which is the
+                # shape templates/jsonld/homepage.jsonld.html ships.
+                if isinstance(parsed, dict) and isinstance(parsed.get("@graph"), list):
+                    self.jsonld_entities+=len(parsed["@graph"])
+                elif isinstance(parsed, list):
+                    self.jsonld_entities+=len(parsed)
+                else:
+                    self.jsonld_entities+=1
             except Exception: pass
     def handle_data(self, d):
         if self._in_title: self.title+=d
@@ -88,7 +99,7 @@ def audit_facts(base_url: str) -> dict:
         "meta_description": f.meta.get("description"), "canonical": f.canonical,
         "og": {k:v for k,v in f.meta.items() if k.startswith("og:")},
         "twitter_card": f.meta.get("twitter:card"),
-        "jsonld_blocks": f.jsonld, "jsonld_valid": f.jsonld_ok,
+        "jsonld_blocks": f.jsonld, "jsonld_valid": f.jsonld_ok, "jsonld_entities": f.jsonld_entities,
         "h1": f.h1, "h2": f.h2, "h3": f.h3, "img": f.img, "time_tags": f.time, "links": f.links,
         "data_uri_count": len(data_uris), "data_uri_kinds": sorted(set(data_uris)),
         "discovery": disc,
@@ -136,7 +147,7 @@ def estimate(f: dict) -> dict:
     else: notes.append("canonical missing (-6)")
     if f["og"]: aeo+=6
     else: notes.append("Open Graph missing (-6)")
-    if f["jsonld_blocks"]>=3: aeo+=16
+    if f.get("jsonld_entities", f["jsonld_blocks"])>=3: aeo+=16
     elif f["jsonld_blocks"]>=1: aeo+=8; notes.append("JSON-LD partial — need Organization+WebSite+WebPage/Article (-8)")
     else: notes.append("no JSON-LD (-16)")
     if f["h1"]==1: aeo+=8
@@ -157,7 +168,7 @@ def gen_robots(site_url: str) -> str:
 
 def gen_sitemap(urls: list) -> str:
     out=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for u in urls: out.append(f"  <url><loc>{u['loc']}</loc><lastmod>{u.get('lastmod','2026-10-07')}</lastmod></url>")
+    for u in urls: out.append(f"  <url><loc>{u['loc']}</loc><lastmod>{u.get('lastmod') or date.today().isoformat()}</lastmod></url>")
     out.append("</urlset>"); return "\n".join(out)
 
 if FastMCP:

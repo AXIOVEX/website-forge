@@ -1,6 +1,6 @@
 # robots.txt — website-forge template
-# Allows all search + AI crawlers. Replace the Sitemap domain with yours.
-# Allows all search + AI crawlers. Replace domain if a custom domain is adopted.
+# Allows all search + AI crawlers. In the Sitemap line at the bottom,
+# replace the placeholder domain with yours.
 User-agent: *
 Allow: /
 
