@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/AXIOVEX/website-forge/blob/main/SECURITY.md
+    about: Please do NOT open a public issue for a vulnerability — email start@axiovexsystems.com per SECURITY.md instead.
+  - name: Getting started guide
+    url: https://github.com/AXIOVEX/website-forge/blob/main/docs/GETTING-STARTED.md
+    about: Accounts, repo setup, and the GitHub → Cloudflare Pages connection — most setup questions are answered here.
+  - name: Read the package validation report
+    url: https://github.com/AXIOVEX/website-forge/blob/main/VALIDATION.md
+    about: What happened when the package was run cold on a fresh example site, including every defect found and fixed.

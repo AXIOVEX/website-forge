@@ -1,0 +1,65 @@
+name: Bug report
+description: Something in the skill, MCP server, templates, or docs is wrong
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Never include secrets, API keys, credentials,
+        or subscriber data** in an issue — refer to them by name and location only.
+        Security vulnerabilities do not belong here; see `SECURITY.md`.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Package area
+      description: Which part of website-forge is affected?
+      options:
+        - MCP server
+        - Skill / references
+        - Templates
+        - Docs / prompts
+        - Examples
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version or commit
+      description: The release version (see CHANGELOG.md) or the git commit you are using.
+      placeholder: e.g. 1.0.0, or commit a1b2c3d
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: The behavior you saw, with the exact error message or wrong output if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What the package's docs, templates, or tool output led you to expect instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The shortest sequence that reproduces it — commands run, the MCP tool and the URL you ran it on, or the file + section for a docs/template bug.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Command output, `--selftest` result, or scanner name + URL + date. Anonymize anything site-specific you do not want public.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, and the AI tool + version you used (e.g. Claude Code, Cursor).
+      placeholder: e.g. Ubuntu 24.04, Python 3.12, Claude Code 1.x

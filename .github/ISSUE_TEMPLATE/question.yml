@@ -1,0 +1,37 @@
+name: Question / support
+description: Ask how to use the package with your site or your AI assistant
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, a skim of `docs/GETTING-STARTED.md` and the README
+        quickstart for your AI tool answers most setup questions.
+        **Security vulnerabilities are not questions** — do not post them
+        publicly; report them by email per `SECURITY.md`.
+  - type: dropdown
+    id: tool
+    attributes:
+      label: What are you using?
+      options:
+        - Claude Code
+        - Cursor / VS Code / another coding agent
+        - ChatGPT (planning and copy)
+        - The MCP server directly
+        - Just reading the docs / templates
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do, and where did you get stuck? Name the package file or MCP tool involved if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried
+      description: Commands run, files copied, or docs followed — and what happened. No secrets or subscriber data, please.

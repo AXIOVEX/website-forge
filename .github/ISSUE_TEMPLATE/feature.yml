@@ -1,0 +1,39 @@
+name: Feature request
+description: A pattern, template, tool, or doc that would make the package stronger
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        website-forge only adopts patterns that have been run on a real site
+        and verified — proposals with evidence travel furthest.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem / job to be done
+      description: What is a site owner (or their AI assistant) trying to accomplish that the package does not currently help with?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: The template, tool, reference, or doc you propose — and where in the package it would live.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other ways to solve the same problem, including doing nothing, and why the proposal beats them.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence it works
+      description: A site you ran the pattern on (anonymized), before/after scores with scanner + date, or a vendor/primary source link.
+  - type: textarea
+    id: guardrails
+    attributes:
+      label: What it must NOT do
+      description: Guardrails the change has to respect — e.g. "must not require a paid tier", "must not weaken the staging-before-production rule".
