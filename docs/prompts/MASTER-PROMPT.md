@@ -48,3 +48,7 @@ visual verification, analytics reporting, costs, newsletter), mcp-server/
 - Next phase: one-line plan
 
 Begin now with a baseline audit (MCP `audit_site` + the official AEO and SEO scanners), save the scores, write the spec for Phase 1 (discoverability files, head, structured data), and stop for my review before implementing.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../../LICENSE)).*

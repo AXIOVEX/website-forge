@@ -81,3 +81,7 @@ are small and specific: a contact-form endpoint (Pages Function), analytics
 - Prefer deterministic generators and templates in this package over writing
   replacements from scratch. Grep for `REPLACE_` before every deploy; zero
   tokens may ship.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../LICENSE)).*

@@ -1,5 +1,6 @@
 # GitHub Actions — generated-site sync (example; rename to site-sync.yml
 # under .github/workflows/ in your SITE repo, and adapt the build command).
+# SPDX-License-Identifier: MIT
 #
 # Pattern: the site is generated from sources (Markdown posts, templates,
 # data) by a deterministic build script. This action re-runs the build when

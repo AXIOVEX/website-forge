@@ -43,3 +43,7 @@ visual verification, analytics reporting, costs, newsletter), mcp-server/
   page weight where relevant, screenshot locations, guard-proof results
 - Owner decisions / `REPLACE_` tokens still open (list, or "none")
 - Next phase: one-line plan
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../LICENSE)).*

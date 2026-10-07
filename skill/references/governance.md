@@ -36,3 +36,7 @@
 - Expect automation commits (content sync, data refresh). Rebase; never
   force-push a shared branch.
 - One logical change per commit where practical; messages name the spec.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../../LICENSE)).*

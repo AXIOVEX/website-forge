@@ -35,3 +35,7 @@ evidence is the only evidence.
 A verification report names: the URLs, the widths, where the screenshots are
 filed, what was compared, and any residual findings — with the same honesty
 rules as scores (a screenshot you didn't take is not a screenshot you took).
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../../LICENSE)).*

@@ -40,3 +40,7 @@ Reports are rendered documents (styled HTML email with a plain-text
 fallback reads correctly everywhere; raw Markdown pasted into an email
 client does not). Recipients and cadence are the owner's choice; the report
 file is also saved with the project records either way.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../../LICENSE)).*

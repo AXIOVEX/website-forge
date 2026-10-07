@@ -40,3 +40,7 @@ still serves `noindex` and the disallow robots afterwards.
   (`x-robots-tag: noindex` header, disallow robots), screenshots taken.
 - Production after promotion: 200, production robots = `Allow: /` + sitemap
   line, **no** `x-robots-tag`, sitemap includes any new URL, headers intact.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../../LICENSE)).*

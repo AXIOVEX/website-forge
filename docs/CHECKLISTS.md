@@ -30,3 +30,7 @@
 - [ ] Re-fetch robots/sitemap/llms live (all 200); confirm no `REPLACE_` tokens anywhere in the tree
 - [ ] Write the report (headline → what this means → detail → scores → labeled suggestions); file it
 - [ ] Anything marked [owner decision] is actually sent to the owner, not just written down
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../LICENSE)).*

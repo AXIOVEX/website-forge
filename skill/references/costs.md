@@ -22,3 +22,7 @@ Real application backends, named-cloud compliance, committed enterprise
 spend, and library-scale video belong on AWS/Azure or purpose-built media
 services. Host *that project* there; keep the marketing/content website on
 this stack. Portability is the insurance: the site is plain files in a repo.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../../LICENSE)).*

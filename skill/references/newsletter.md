@@ -40,3 +40,7 @@ design system (they are pages like any other: spec, staging, screenshots).
 Until the list store exists and is bound, subscribe endpoints should fail
 closed (a clear "not yet" response), never silently accept addresses into
 a void.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../../LICENSE)).*

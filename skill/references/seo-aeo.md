@@ -53,3 +53,7 @@ links), **by design** (with the reason written down), or **owner decision**
   matter how perfect the site is; it accrues with real links over months.
 - A perfect AEO score is attainable and holdable; a composite SEO 100
   generally is not, on any honest site. Report sub-scores, not just totals.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../../LICENSE)).*

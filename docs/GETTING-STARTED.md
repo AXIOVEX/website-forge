@@ -64,3 +64,7 @@ redirect shim keeps old shared links working if you migrate formats.
 - Search Console + Bing: verify the property, submit the sitemap.
 - Turn on the weekly loop (`skill/references/analytics-reporting.md`) —
   even a 20-minute manual version beats discovering a problem in month six.
+
+---
+
+*Copyright (c) 2026 Axiovex Systems, LLC — MIT License (see [LICENSE](../LICENSE)).*

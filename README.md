@@ -70,6 +70,20 @@ A business website is pages written once and read many times. It does not need a
 
 Where a real application backend, a named-cloud compliance regime, or library-scale video enters the picture, host *that project* on AWS or Azure — and keep the website here. The method states its own boundary.
 
+## Disclaimer
+
+website-forge is provided **as-is, without warranty of any kind** (see the
+MIT terms in [LICENSE](LICENSE)). It documents how Axiovex Systems runs its
+own and client sites; it is not legal, tax, or compliance advice, and no
+template in it — including the privacy-page starter — is a substitute for
+your own counsel's review. Prices and platform limits quoted in
+`docs/COSTS.md` and elsewhere are snapshots checked on the dates stated in
+those documents; vendors change them, so verify before you budget. You are
+responsible for your own site: its content, its claims, its privacy
+practices, and its compliance. Every `REPLACE_` token exists because those
+decisions belong to the site's owner — the package deliberately does not
+make them for you.
+
 ## Who made this
 
 Published by **Axiovex Systems, LLC** — a Michigan engineering consultancy. This is the sanitized, generalized version of the operating system behind axiovexsystems.com and client sites built the same way. Questions: start@axiovexsystems.com
@@ -77,3 +91,5 @@ Published by **Axiovex Systems, LLC** — a Michigan engineering consultancy. Th
 ## License
 
 MIT — see [LICENSE](LICENSE). Use it, fork it, ship client sites with it. Attribution appreciated, not required beyond the license.
+
+Copyright (c) 2026 Axiovex Systems, LLC
