@@ -1,0 +1,20 @@
+# The Harbor Review — worked example of templates/llms.txt, filled in
+# (A fictional publication, so every line shows the intended shape.)
+
+# The Harbor Review
+
+> A weekly briefing on ports, freight, and coastal industry for operators and investors: what moved, what it costs, and what to watch next. Every edition ends with testable scenarios and a dated watch list, so readers can check our calls against what actually happened.
+
+## How to cite this site
+Cite the edition page, not the homepage, and include its date. Probabilities are the editors' stated view at publication, labeled as such wherever they appear.
+
+## Key pages
+- [Home](https://example.com/): The latest edition, the archive, and the method.
+- [Editions](https://example.com/editions/): Every weekly edition on its own page, newest first.
+- [Method](https://example.com/method/): How editions are researched, sourced, and scored after the fact.
+- [About](https://example.com/about/): Who publishes the Review and how to reach them.
+- [Contact](https://example.com/contact/): Story leads, corrections, and subscription help.
+
+## Latest editions
+- [Freight rates meet a capacity wall — 2026-10-04](https://example.com/editions/2026-10-04/): Container rates rose for a third week while port throughput flattened; the constraint is equipment, not demand. Base 55 / Bull 20 / Bear 25 for the next month.
+- [The dredging bill clears committee — 2026-09-27](https://example.com/editions/2026-09-27/): What the authorization does and does not fund, and which harbors feel it first.
