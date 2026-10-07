@@ -1,0 +1,35 @@
+<!-- Homepage JSON-LD — insert before </head> or at end of <body>.
+     Fill every REPLACE_ token. Validate at validator.schema.org. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://REPLACE_your-domain.example/#org",
+      "name": "REPLACE_publication_or_company_name",
+      "url": "https://REPLACE_your-domain.example/",
+      "logo": "https://REPLACE_your-domain.example/REPLACE_logo.png",
+      "description": "REPLACE_one_sentence_description_of_your_organization"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://REPLACE_your-domain.example/#site",
+      "url": "https://REPLACE_your-domain.example/",
+      "name": "REPLACE_publication_name",
+      "publisher": { "@id": "https://REPLACE_your-domain.example/#org" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://REPLACE_your-domain.example/#webpage",
+      "url": "https://REPLACE_your-domain.example/",
+      "name": "REPLACE_site_title_with_keywords",
+      "isPartOf": { "@id": "https://REPLACE_your-domain.example/#site" },
+      "about": { "@id": "https://REPLACE_your-domain.example/#org" },
+      "description": "REPLACE_150-160_char_homepage_description",
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>

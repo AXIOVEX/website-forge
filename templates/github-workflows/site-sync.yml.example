@@ -1,0 +1,32 @@
+# GitHub Actions — generated-site sync (example; rename to site-sync.yml
+# under .github/workflows/ in your SITE repo, and adapt the build command).
+#
+# Pattern: the site is generated from sources (Markdown posts, templates,
+# data) by a deterministic build script. This action re-runs the build when
+# content or the generator changes, and commits the generated output back —
+# the bot's push then triggers the host's Git deploy. Deterministic output
+# matters: re-running with no source change must produce no diff.
+name: site-sync
+on:
+  push:
+    branches: [main, staging]
+    paths: ["blog/**", "scripts/**", "data/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Build the site
+        run: node scripts/build-site.mjs
+      - name: Commit generated output if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "build: regenerate site (site-sync)"
+          git push

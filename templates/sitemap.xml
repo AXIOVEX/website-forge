@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- STARTER sitemap. Add one <url> per real page (every article/edition gets
+     its own URL in Phase 2 of the SEO/AEO work) and keep every <lastmod>
+     honest — the date that page actually last changed. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://REPLACE_your-domain.example/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

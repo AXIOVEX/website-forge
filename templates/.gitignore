@@ -1,0 +1,12 @@
+# website-forge recommended .gitignore for a site repo
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+node_modules/
+.venv/
+__pycache__/
+*.log
+# Secrets never belong in a site repo — tokens live in the host's secret
+# store or a mode-600 .env OUTSIDE git (see skill/SKILL.md rule 7).

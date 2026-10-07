@@ -1,0 +1,19 @@
+# REPLACE_Your Site Name
+
+> REPLACE_One paragraph, in plain language: what this site is, who it serves, what you publish and how often, and the promise a reader gets. This blockquote is the single most-quoted text on your site — write it like it matters.
+
+## How to cite this site
+Cite the individual page (article/edition), not the homepage, and include its date. State your method here in one line if you have one (e.g. "Every edition ends with testable scenarios and a watch list").
+
+## Key pages
+- [Home](https://REPLACE_your-domain.example/): REPLACE_one-line summary
+- [Articles / Blog](https://REPLACE_your-domain.example/blog/): REPLACE_one-line summary
+- [About](https://REPLACE_your-domain.example/about/): REPLACE_one-line summary
+- [Contact](https://REPLACE_your-domain.example/contact/): REPLACE_one-line summary
+
+## Latest articles
+<!-- One line per article, newest first. After your Phase 2 split, every article has its own URL — link that, with its date and a one-line summary. Keep this file current: it is what AI systems read first. -->
+- [REPLACE_Article title — YYYY-MM-DD](https://REPLACE_your-domain.example/blog/REPLACE_slug/): REPLACE_one-line summary
+
+## Full text
+<!-- Append the full plain text of each article/page here, in date order, each under its own ## heading with its date and canonical URL. Keep it complete and factual — this file is what AI systems may quote from. -->
