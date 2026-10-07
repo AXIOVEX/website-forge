@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+[project]
+name = "website-forge-mcp"
+version = "1.0.0"
+description = "Audit + generator MCP tools for websites run the website-forge way (GitHub + Cloudflare Pages)"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["mcp[cli]>=1.9"]

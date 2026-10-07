@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "website-forge": {
+      "command": "python",
+      "args": ["/ABSOLUTE/PATH/TO/website-forge/mcp-server/server.py"]
+    }
+  }
+}
