@@ -59,6 +59,8 @@ redirect shim keeps old shared links working if you migrate formats.
 ## 6. First-week extras that pay off for years
 - `robots.txt`, `sitemap.xml`, `llms.txt` from `templates/`, live and 200.
 - Organization/WebSite/WebPage JSON-LD from `templates/jsonld/`, validated.
+- A privacy page at `/privacy/` — start from `templates/privacy-page.md`
+  and state only what your real stack does.
 - Search Console + Bing: verify the property, submit the sitemap.
 - Turn on the weekly loop (`skill/references/analytics-reporting.md`) —
   even a 20-minute manual version beats discovering a problem in month six.

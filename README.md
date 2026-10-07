@@ -31,7 +31,7 @@ Upload the Markdown files from this repo and paste `prompts/MASTER-PROMPT.md`. U
 |---|---|
 | `skill/` | The reusable Skill: forced requirements, a task index, and seven deep references (governance, staging & promotion, SEO/AEO, visual verification, analytics reporting, costs, newsletter) |
 | `mcp-server/` | A small MCP server (Python, FastMCP, no API keys) with audit, discovery, header, page-check, and generator tools for robots/sitemap/llms — self-test included |
-| `templates/` | Drop-in starters: robots.txt (AI crawlers allowed), sitemap.xml, llms.txt, Netlify/Cloudflare `_headers`, a full `<head>` snippet, JSON-LD (Organization, Article, FAQ), a blog-post template, `.gitignore`, and a GitHub Actions build-sync workflow |
+| `templates/` | Drop-in starters: robots.txt (AI crawlers allowed), sitemap.xml, llms.txt, Netlify/Cloudflare `_headers`, a full `<head>` snippet, JSON-LD (Organization, Article, FAQ), a blog-post template, a privacy-page starter, `.gitignore`, and a GitHub Actions build-sync workflow |
 | `docs/` | Getting started, agent instructions, checklists, the verified cost comparison, and per-phase prompts |
 | `examples/` | A filled-in llms.txt and a complete worked spec for "add a blog article" |
 | `AUDIT` method | The same audit → fix → verify loop we run on our own site, which holds AEO 100/100 and ~90% SEO in independent checks |
